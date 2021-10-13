@@ -33,31 +33,32 @@ function showEnd() {
 	document.getElementById("page1").style.visibility = "hidden";
 	document.getElementById("page2").style.visibility = "hidden";
 	document.getElementById("end").style.visibility = "visible";
-	document.getElementById("ramen").style.visibility = "hidden";
-	
+
+	var x = document.getElementsByClassName("ramenbowl");
+	for (var i = 0; i < x.length; i++)
+    	x[i].style.left = "500px";
 }
 
 function displaySoup(x) {
-	var item = "";
 
 	switch(x) {
 		case 1:
-			item = "shoyu";
+			document.getElementById("shoyu").style.visibility = "visible";
+			document.getElementById("miso").style.visibility = "hidden";
+			document.getElementById("tonkotsu").style.visibility = "hidden";
 			break;
 		case 2:
-			item = "miso";
+			document.getElementById("shoyu").style.visibility = "hidden";
+			document.getElementById("miso").style.visibility = "visible";
+			document.getElementById("tonkotsu").style.visibility = "hidden";
 			break;
 		case 3:
-			item = "tonkotsu";
+			document.getElementById("shoyu").style.visibility = "hidden";
+			document.getElementById("miso").style.visibility = "hidden";
+			document.getElementById("tonkotsu").style.visibility = "visible";
 			break;
 	}
 
-	if (document.getElementById(item).style.visibility == "visible") {
-		document.getElementById(item).style.visibility = "hidden";
-	}
-	else {
-		document.getElementById(item).style.visibility = "visible";
-	}
 
 }
 
@@ -93,6 +94,22 @@ function displayTopping(x) {
 	}
 }
 
-function displayNoodle(x) {
-	
+function displayNoodles(x) {
+	switch(x) {
+		case 1:
+			document.getElementById("thinnoodles").style.visibility = "visible";
+			document.getElementById("mednoodles").style.visibility = "hidden";
+			document.getElementById("thicknoodles").style.visibility = "hidden";
+			break;
+		case 2:
+			document.getElementById("thinnoodles").style.visibility = "hidden";
+			document.getElementById("mednoodles").style.visibility = "visible";
+			document.getElementById("thicknoodles").style.visibility = "hidden";
+			break;
+		case 3:
+			document.getElementById("thinnoodles").style.visibility = "hidden";
+			document.getElementById("mednoodles").style.visibility = "hidden";
+			document.getElementById("thicknoodles").style.visibility = "visible";
+			break;
+	}
 }
