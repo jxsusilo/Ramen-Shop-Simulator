@@ -2,6 +2,7 @@ body {
   margin: 0 0 0 0;
   overflow: auto;
   background-color: #efe9e7;
+  animation: fadebackground linear 7s;
 }
 
 h1 {
@@ -38,7 +39,12 @@ h2 {
 }
 
 h2:hover {
-  background-color: #ffffffa0;
+  background-color: #ffffffd0;
+}
+
+h3 {
+  font-family: Shrikhand, sans-serif;
+  font-size: 30px;
 }
 
 #logo {
@@ -142,11 +148,6 @@ h2:hover {
     z-index: 0;
 }
 
-#page1 {
-  background-color: #548687;
-}
-
-
 button {
   background-color: white; 
     color: darkred; 
@@ -160,6 +161,7 @@ button {
     margin: 4px 2px;
     transition-duration: 0.3s;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 button:hover {
