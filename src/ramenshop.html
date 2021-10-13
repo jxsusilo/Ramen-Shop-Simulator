@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Ramen Shop Simulator</title>
+		<link rel="stylesheet" href="ramenshop.css">
+		<script src="ramenshop.js"></script>
+		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong"> -->
+	</head>
+
+
+	<body onload="showWelcome()">
+
+		<div id="welcome">
+
+			<div id="main">
+
+				<!-- all photos are still placeholders rn!!!! -->
+
+				<img src="../../fishcake2.png" width="150">
+				<h1>Welcome to Shop Name</h1>
+				<h2>Build your own ramen!</h2>
+				<button onclick="showPage1()" >Start</button>
+			</div>
+
+			<div id="backgroundL">
+				<img src="../backgrounds/tatami.png" width="300" height="720">
+			</div>
+
+			<div id="backgroundR">
+				<img src="../backgrounds/tatami.png" width="300" height="720">
+			</div>
+
+		</div>
+
+		<div id="ramen">
+
+			<img class="ramenbowl" id="bowl" src="../ramen/bowl-01.png">
+			<img class="ramenbowl" id="shoyu" src="../ramen/shoyu-01.png">
+			<img class="ramenbowl" id="miso" src="../ramen/miso-01.png">
+			<img class="ramenbowl" id="tonkotsu" src="../ramen/tonkotsu-01.png">
+			<img class="ramenbowl" id="thicknoodles" src="../ramen/thick noodles-01.png">
+			<img class="ramenbowl" id="mednoodles" src="../ramen/med noodles-01.png">
+			<img class="ramenbowl" id="thinnoodles" src="../ramen/thin noodles-01.png">
+			<img class="ramenbowl" id="seaweed" src="../ramen/seaweed-01.png">
+			<img class="ramenbowl" id="egg" src="../ramen/egg-01.png">
+			<img class="ramenbowl" id="chashu" src="../ramen/chashu-01.png">
+			<img class="ramenbowl" id="bamboo" src="../ramen/bamboo-01.png">
+			<img class="ramenbowl" id="onion" src="../ramen/onion-01.png">
+			<img class="ramenbowl" id="fishcake" src="../ramen/fishcake-01.png">
+			
+
+
+		</div>
+
+		<div id="page1">
+			<div class = "title">
+				<img src="../icons/fishcake-01.png" width="50">
+				<h3 class="prompt">Pick your soup and noodles!</h3>
+			</div>
+
+
+
+			<div class = "nav">
+				<button onclick="showPage2()">Next</button>
+			</div>
+		</div>
+
+		<div id="page2">
+
+			<div class = "title">
+				<img src="../icons/fishcake-01.png" width="50">
+				<h3 class="prompt">Pick your toppings!</h3>
+			</div>
+			<div id="toppings">
+				<h4>Toppings</h4>
+				<img class="item" src="../icons/fishcake-01.png" onclick="displayTopping(1)">  <img class="item" src="../icons/chashu-01.png" onclick="displayTopping(2)">  <img class="item" src="../icons/egg-01.png" onclick="displayTopping(3)">	
+				<br>
+				<img class="item" src="../icons/bamboo-01.png" onclick="displayTopping(4)">  <img class="item" src="../icons/onion-01.png" onclick="displayTopping(5)">  <img class="item" src="../icons/seaweed-01.png" onclick="displayTopping(6)">
+				<br>
+			</div>
+
+			<div class = "nav">
+				<button onclick="showPage1()">Back</button>  <button onclick="showEnd()">Finished!</button>
+			</div>
+		</div>
+
+		<div id="end">
+
+			<p>Done!</p>
+
+		</div>
+
+	</body>
+
+</html>
