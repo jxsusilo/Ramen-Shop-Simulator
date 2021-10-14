@@ -13,6 +13,10 @@
 
 	<body onload="showWelcome()">
 
+		<div id="topbanner">
+			<img src="../backgrounds/titlebanners.png" width="800px" height="250px">
+		</div>
+
 		<div id="welcome">
 
 			<div id="main">
@@ -38,6 +42,10 @@
 		</div>
 
 
+		<div id="side_bg">
+			<img src="../backgrounds/side bg.png">
+		</div>
+
 
 		<div id="ramen">
 
@@ -60,48 +68,48 @@
 		<div id="page1">
 
 			<div class = "title">
-				<img src="../icons/logo-01.png" width="50">
+				<img class="small_logo" src="../icons/logo-01.png">
 				<h3 class="prompt">Pick your soup and noodles!</h3>
 			</div>
 
 			<div class="ingredients">
 				<h4>Soup</h4>
-				<img class="item" src="../icons/shoyu-01.png" onclick="displaySoup(1)">  <img class="item" src="../icons/miso-01.png" onclick="displaySoup(2)">  <img class="item" src="../icons/tonkotsu-01.png" onclick="displaySoup(3)">	
+				<img class="item" id="shoyu_icon" src="../icons/shoyu-01.png" onclick="displaySoup(1)">  <img class="item" id="miso_icon" src="../icons/miso-01.png" onclick="displaySoup(2)">  <img class="item" id="tonkotsu_icon" src="../icons/tonkotsu-01.png" onclick="displaySoup(3)">	
 				<br>
 				<h4>Noodles</h4>
-				<img class="item" src="../icons/thin noodles-01.png" onclick="displayNoodles(1)">  <img class="item" src="../icons/med noodles-01.png" onclick="displayNoodles(2)">  <img class="item" src="../icons/thick noodles-01.png" onclick="displayNoodles(3)">
+				<img class="item" id="thin_icon" src="../icons/thin noodles-01.png" onclick="displayNoodles(1)">  <img class="item" id="med_icon" src="../icons/med noodles-01.png" onclick="displayNoodles(2)">  <img class="item" id="thick_icon" src="../icons/thick noodles-01.png" onclick="displayNoodles(3)">
 				<br>
 			</div>
 
 
 
 			<div class = "nav">
-				<button onclick="showPage2()">Next</button>
+				<button onclick="showPage2()">></button>
 			</div>
 		</div>
 
 		<div id="page2">
 
 			<div class = "title">
-				<img src="../icons/logo-01.png" width="50">
+				<img class="small_logo" src="../icons/logo-01.png">
 				<h3 class="prompt">Pick your toppings!</h3>
 			</div>
 			<div class="ingredients">
 				<h4>Toppings</h4>
-				<img class="item" src="../icons/fishcake-01.png" onclick="displayTopping(1)">  <img class="item" src="../icons/chashu-01.png" onclick="displayTopping(2)">  <img class="item" src="../icons/egg-01.png" onclick="displayTopping(3)">	
+				<img class="item" id="fishcake_icon" src="../icons/fishcake-01.png" onclick="displayTopping(1)">  <img class="item" id="chashu_icon" src="../icons/chashu-01.png" onclick="displayTopping(2)">  <img id="egg_icon" class="item" src="../icons/egg-01.png" onclick="displayTopping(3)">	
 				<br>
-				<img class="item" src="../icons/bamboo-01.png" onclick="displayTopping(4)">  <img class="item" src="../icons/onion-01.png" onclick="displayTopping(5)">  <img class="item" src="../icons/seaweed-01.png" onclick="displayTopping(6)">
+				<img class="item" id="bamboo_icon" src="../icons/bamboo-01.png" onclick="displayTopping(4)">  <img class="item" id="onion_icon" src="../icons/onion-01.png" onclick="displayTopping(5)">  <img class="item" id="seaweed_icon" src="../icons/seaweed-01.png" onclick="displayTopping(6)">
 				<br>
 			</div>
 
 			<div class = "nav">
-				<button onclick="showPage1()">Back</button>  <button onclick="showEnd()">Finished!</button>
+				<button onclick="showPage1()"><</button> <button onclick="showEnd()">Finished!</button>
 			</div>
 		</div>
 
 		<div id="end">
 
-			<h3>Enjoy your ramen!</h3>
+			<h2>Enjoy your ramen!</h2>
 
 		</div>
 

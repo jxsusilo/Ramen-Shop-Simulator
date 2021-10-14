@@ -46,12 +46,36 @@ h2:hover {
 h3 {
   font-family: Shrikhand, sans-serif;
   font-size: 30px;
+  color: #ffffff;
 }
 
 h4 {
-  font-family: Shrikhand, sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 20px;
+  margin: 10px 0 10px 0;
+  color: white;
 }
+
+#side_bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 57%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+#topbanner {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  transform: translate(0, -30%);
+  z-index: 1;
+}
+
+
 
 #logo {
   margin: 70px 0px 0px 0px;
@@ -115,8 +139,8 @@ h4 {
 .ingredients {
     overflow: hidden;
     position:absolute; 
-    top: 180px; 
-    right: 200px; 
+    top: 28%; 
+    left: 50%; 
     z-index: 0;
 }
 
@@ -127,16 +151,16 @@ h4 {
 .nav {
   overflow: hidden;
     position: absolute; 
-    top: 700px; 
-    right: 200px; 
+    bottom: 5%; 
+    right: 8%; 
     z-index: 0;
 }
 
 .ramenbowl {
     overflow: hidden;
     position:absolute; 
-    top: 150px; 
-    left: 100px; 
+    top: 15%; 
+    left: 3%; 
     z-index: 0;
 
     visibility: hidden;
@@ -144,17 +168,18 @@ h4 {
 
 .item {
   width: 150px;
-  border: 5px solid darkred;
+  border: 5px solid #91140b;
   transition-duration: 0.3s;
 }
 
 .item:hover {
-  border: 5px solid yellow;
+  width: 160px;
+  /*border: 5px solid #0b4159;*/
 }
 
 .prompt {
   display:  inline-block;
-  font-size: 50px;
+  font-size: 40px;
   text-align: right;
 }
 
@@ -163,8 +188,14 @@ h4 {
   overflow: hidden;
     position:absolute; 
     top: 0; 
-    right: 200px; 
-    z-index: 0;
+    left: 48%; 
+    z-index: 2;
+}
+
+.small_logo {
+  display:  inline-block;
+  width: 60px;
+  vertical-align: text-bottom;
 }
 
 button {
@@ -177,10 +208,10 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 5px 5px 5px 5px;
     transition-duration: 0.3s;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 50px;
 }
 
 button:hover {
