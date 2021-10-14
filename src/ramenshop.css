@@ -47,8 +47,14 @@ h3 {
   font-size: 30px;
 }
 
+h4 {
+  font-family: Shrikhand, sans-serif;
+  font-size: 20px;
+}
+
 #logo {
-  padding: 70px 0px 0px 0px;
+  margin: 70px 0px 0px 0px;
+  border: 5px solid black;
 }
 
 #welcome {
@@ -90,6 +96,13 @@ h3 {
 
   text-align: center;
 
+}
+
+#end {
+  position: absolute;
+  bottom: 10%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
 }
 
 

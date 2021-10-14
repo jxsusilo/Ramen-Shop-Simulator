@@ -35,8 +35,11 @@ function showEnd() {
 	document.getElementById("end").style.visibility = "visible";
 
 	var x = document.getElementsByClassName("ramenbowl");
-	for (var i = 0; i < x.length; i++)
-    	x[i].style.left = "500px";
+	for (var i = 0; i < x.length; i++) {
+		x[i].style.top = "45%";
+    	x[i].style.left = "49%";
+    	x[i].style.transform = "translate(-50%, -50%)";
+	}
 }
 
 function displaySoup(x) {
