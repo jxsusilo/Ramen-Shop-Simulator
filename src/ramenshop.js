@@ -2,6 +2,8 @@
 Navigation
 */
 
+var entered = false;
+
 function showWelcome() {
 	document.getElementById("welcome").style.visibility = "visible";
 	document.getElementById("page1").style.visibility = "hidden";
@@ -18,6 +20,7 @@ function showPage1() {
 	document.getElementById("end").style.visibility = "hidden";
 	document.getElementById("ramen").style.visibility = "visible";
 	document.getElementById("bowl").style.visibility = "visible";
+	
 }
 
 function showPage2() {

@@ -2,7 +2,6 @@ body {
   margin: 0 0 0 0;
   overflow: auto;
   background-color: #efe9e7;
-  animation: fadebackground linear 7s;
 }
 
 h1 {
@@ -10,11 +9,7 @@ h1 {
   font-size: 70px;
   color: white;
   transition-duration: 0.3s;
-  text-shadow: 
-    -2px -2px 0 #91140b,
-    2px -2px 0 #91140b,
-    -2px 2px 0 #91140b,
-    2px 2px 0 #91140b,  
+  text-shadow:  
     -4px 0 0 #91140b,
     4px 0 0 #91140b,
     0 4px 0 #91140b,
@@ -24,7 +19,13 @@ h1 {
 }
 
 h1:hover {
-  text-shadow: 0px 0px 10px #91140b;
+  text-shadow: 
+ 
+    -4px 0 0 #91140b90,
+    4px 0 0 #91140b90,
+    0 4px 0 #91140b90,
+    0 -4px 0 #91140b90;
+    padding:  0 0 0 0 ;
 }
 
 h2 {
@@ -39,7 +40,7 @@ h2 {
 }
 
 h2:hover {
-  background-color: #ffffffd0;
+  background-color: #ffffffe0;
 }
 
 h3 {
@@ -105,7 +106,7 @@ h4 {
 
 #end {
   position: absolute;
-  bottom: 10%; 
+  top: 77%; 
   left: 50%; 
   transform: translate(-50%, -50%);
 }
@@ -167,7 +168,7 @@ h4 {
 }
 
 button {
-  background-color: white; 
+    background-color: white; 
     color: darkred; 
     border: 2px solid darkred;
     padding: 16px 32px;
@@ -179,11 +180,12 @@ button {
     margin: 4px 2px;
     transition-duration: 0.3s;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 50%;
 }
 
 button:hover {
   background-color: darkred;
   color: white;
+  font-size: 20px;
 }
 
