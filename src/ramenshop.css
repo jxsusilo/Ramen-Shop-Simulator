@@ -173,14 +173,14 @@ h4 {
 }
 
 .item:hover {
-  width: 160px;
-  /*border: 5px solid #0b4159;*/
+  opacity: 50%;
 }
 
 .prompt {
   display:  inline-block;
-  font-size: 40px;
+  font-size: 30px;
   text-align: right;
+  margin-top: 50px;
 }
 
 .title {
