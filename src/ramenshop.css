@@ -179,7 +179,6 @@ h4 {
 .prompt {
   display:  inline-block;
   font-size: 30px;
-  text-align: right;
   margin-top: 50px;
 }
 
@@ -188,7 +187,7 @@ h4 {
   overflow: hidden;
     position:absolute; 
     top: 0; 
-    left: 48%; 
+    left: 55%; 
     z-index: 2;
 }
 
@@ -250,6 +249,66 @@ button:hover {
 }
 
 #miso_icon:hover + #miso_desc {
+  visibility: visible;
+  background-color: #000000a0;
+  color: #ffffffff;
+}
+
+#tonkotsu_icon:hover + #tonkotsu_desc {
+  visibility: visible;
+  background-color: #000000a0;
+  color: #ffffffff;
+}
+
+#thin_icon:hover + #thin_desc {
+  visibility: visible;
+  background-color: #000000a0;
+  color: #ffffffff;
+}
+
+#med_icon:hover + #med_desc {
+  visibility: visible;
+  background-color: #000000a0;
+  color: #ffffffff;
+}
+
+#thick_icon:hover + #thick_desc {
+  visibility: visible;
+  background-color: #000000a0;
+  color: #ffffffff;
+}
+
+#fishcake_icon:hover + #fishcake_desc {
+  visibility: visible;
+  background-color: #000000a0;
+  color: #ffffffff;
+}
+
+#chashu_icon:hover + #chashu_desc {
+  visibility: visible;
+  background-color: #000000a0;
+  color: #ffffffff;
+}
+
+#egg_icon:hover + #egg_desc {
+  visibility: visible;
+  background-color: #000000a0;
+  color: #ffffffff;
+}
+
+#bamboo_icon:hover + #bamboo_desc {
+  visibility: visible;
+  background-color: #000000a0;
+  color: #ffffffff;
+}
+
+#onion_icon:hover + #onion_desc {
+  visibility: visible;
+  background-color: #000000a0;
+  color: #ffffffff;
+}
+
+#seaweed_icon:hover + #seaweed_desc {
   visibility: visible;
   background-color: #000000a0;
   color: #ffffffff;
