@@ -322,7 +322,7 @@ button:hover {
 #chopsticks {
   position:  absolute;
   top: 20%;
-  left: 24%;
+  right: 24%;
   height: 380px;
   width: auto;
   z-index: 1;
@@ -331,7 +331,7 @@ button:hover {
 #spoon {
   position:  absolute;
   top: 25%;
-  right: 24%;
+  left: 24%;
   height: 300px;
   width: auto;
   z-index: 1;
