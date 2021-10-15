@@ -13,6 +13,7 @@ function showWelcome() {
 	document.getElementById("end").style.visibility = "hidden";
 	document.getElementById("ramen").style.visibility = "hidden";
 	document.getElementById("bowl").style.visibility = "hidden";
+	document.getElementById("utensils").style.visibility = "hidden";
 }
 
 function showPage1() {
@@ -24,6 +25,7 @@ function showPage1() {
 	document.getElementById("end").style.visibility = "hidden";
 	document.getElementById("ramen").style.visibility = "visible";
 	document.getElementById("bowl").style.visibility = "visible";
+	document.getElementById("utensils").style.visibility = "hidden";
 
 	if(!entered) {
 		document.getElementById("shoyu").style.visibility = "visible";
@@ -43,6 +45,8 @@ function showPage2() {
 	document.getElementById("topbanner").style.visibility = "visible";
 	document.getElementById("end").style.visibility = "hidden";
 	document.getElementById("ramen").style.visibility = "visible";
+	document.getElementById("utensils").style.visibility = "hidden";
+
 }
 
 function showEnd() {
@@ -52,6 +56,8 @@ function showEnd() {
 	document.getElementById("side_bg").style.visibility = "hidden";
 	document.getElementById("topbanner").style.visibility = "hidden";
 	document.getElementById("end").style.visibility = "visible";
+	document.getElementById("utensils").style.visibility = "visible";
+
 
 	var x = document.getElementsByClassName("ramenbowl");
 	for (var i = 0; i < x.length; i++) {
