@@ -130,7 +130,7 @@ h4 {
 
 #end {
   position: absolute;
-  top: 77%; 
+  top: 80%; 
   left: 50%; 
   transform: translate(-50%, -50%);
 }
@@ -220,3 +220,37 @@ button:hover {
   font-size: 20px;
 }
 
+.desc {
+  padding: 20px 20px 20px 20px;
+  pointer-events: none;
+  position: absolute;
+  visibility: hidden;
+  text-align: center;
+  background-color: #00000000;
+  color: #ffffff00;
+  font-family: Urbanist;
+  z-index: 50;
+  transition-duration: 0.3s;
+  top: 55%;
+  left: 10%;
+  right: 10%;
+  transform: translate(0, -50%);
+}
+
+.desc_title {
+  font-family: Shrikhand;
+  font-size: 30px;
+  margin: 0 0 0 0;
+}
+
+#shoyu_icon:hover + #shoyu_desc {
+  visibility: visible;
+  background-color: #000000a0;
+  color: #ffffffff;
+}
+
+#miso_icon:hover + #miso_desc {
+  visibility: visible;
+  background-color: #000000a0;
+  color: #ffffffff;
+}
