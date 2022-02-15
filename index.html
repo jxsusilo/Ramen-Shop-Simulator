@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Ramen Shop Simulator</title>
+		<link rel="stylesheet" href="./src/ramenshop.css">
+		<script src="./src/ramenshop.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand"> 
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> 
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Urbanist"> 
+	</head>
+
+
+	<body onload="showWelcome()">
+
+		<div id="topbanner">
+			<img src="./backgrounds/titlebanners.png" width="800px" height="250px">
+		</div>
+
+		<div id="welcome">
+
+			<div id="main">
+				<img id="logo" src="./icons/logo-01.png" width="150">
+				<h1> Welcome to PJ Ramen Shop</h1>
+				<h2>Build your own ramen!</h2>
+				<button onclick="showPage1()" >Start</button>
+			</div>
+
+			<div id="backgroundL">
+				<img src="./backgrounds/tatami.png" width="400" height="800">
+			</div>
+
+			<div id="backgroundR">
+				<img src="./backgrounds/tatami.png" width="400" height="800">
+			</div>
+
+			<div id="bg">
+				<img src="./backgrounds/banner.png">
+			</div>
+
+		</div>
+
+
+		<div id="side_bg">
+			<img src="./backgrounds/side bg.png">
+		</div>
+
+
+		<div id="ramen">
+
+			<img class="ramenbowl" id="bowl" src="./ramen/bowl-01.png">
+			<img class="ramenbowl" id="shoyu" src="./ramen/shoyu-01.png">
+			<img class="ramenbowl" id="miso" src="./ramen/miso-01.png">
+			<img class="ramenbowl" id="tonkotsu" src="./ramen/tonkotsu-01.png">
+			<img class="ramenbowl" id="thicknoodles" src="./ramen/thick noodles-01.png">
+			<img class="ramenbowl" id="mednoodles" src="./ramen/med noodles-01.png">
+			<img class="ramenbowl" id="thinnoodles" src="./ramen/thin noodles-01.png">
+			<img class="ramenbowl" id="seaweed" src="./ramen/seaweed-01.png">
+			<img class="ramenbowl" id="egg" src="./ramen/egg-01.png">
+			<img class="ramenbowl" id="chashu" src="./ramen/chashu-01.png">
+			<img class="ramenbowl" id="bamboo" src="./ramen/bamboo-01.png">
+			<img class="ramenbowl" id="onion" src="./ramen/onion-01.png">
+			<img class="ramenbowl" id="fishcake" src="./ramen/fishcake-01.png">
+
+		</div>
+
+		<div id="page1">
+
+			<div class = "title">
+				<img class="small_logo" src="./icons/logo-01.png">
+				<h3 class="prompt">Pick your soup and noodles!</h3>
+			</div>
+
+			<div class="ingredients">
+				<h4>Soup</h4>
+				<img class="item" id="shoyu_icon" src="./icons/shoyu-01.png" onclick="displaySoup(1)">
+				<div class="desc" id="shoyu_desc">
+					<p class="desc_title">Shoyu</p>
+					<p>Our light and savory soy sauce-based broth! Simple yet classic, the tangy flavor of this clear broth will leave you feeling refreshed and satisfied!</p>
+				</div>
+				<img class="item" id="miso_icon" src="./icons/miso-01.png" onclick="displaySoup(2)">  
+				<div class="desc" id="miso_desc">
+					<p class="desc_title">Miso</p>
+					<p>Our sweet and nutty miso paste-based broth! Made using our special house fermented soybeans, the rich and unique flavor is sure to captivate your taste buds!</p>
+				</div>
+				<img class="item" id="tonkotsu_icon" src="./icons/tonkotsu-01.png" onclick="displaySoup(3)">
+				<div class="desc" id="tonkotsu_desc">
+					<p class="desc_title">Tonkotsu</p>
+					<p>Our thick and hearty pork bone-based broth! Carefully seasoned and left to simmer for hours, this broth features a creamy umami flavor, perfect for meat-lovers!</p>
+				</div>	
+				<br>
+				<h4>Noodles</h4>
+				<img class="item" id="thin_icon" src="./icons/thin noodles-01.png" onclick="displayNoodles(1)">  
+				<div class="desc" id="thin_desc">
+					<p class="desc_title">Thin Noodles</p>
+				</div>	
+				<img class="item" id="med_icon" src="./icons/med noodles-01.png" onclick="displayNoodles(2)">  
+				<div class="desc" id="med_desc">
+					<p class="desc_title">Medium Noodles</p>
+				</div>
+				<img class="item" id="thick_icon" src="./icons/thick noodles-01.png" onclick="displayNoodles(3)">
+				<div class="desc" id="thick_desc">
+					<p class="desc_title">Thick Noodles</p>
+				</div>
+				<br>
+			</div>
+
+
+
+			<div class = "nav">
+				<button onclick="showPage2()">></button>
+			</div>
+		</div>
+
+		<div id="page2">
+
+			<div class = "title">
+				<img class="small_logo" src="./icons/logo-01.png">
+				<h3 class="prompt">Pick your toppings!</h3>
+			</div>
+			<div class="ingredients">
+				<h4>Toppings</h4>
+				<img class="item" id="fishcake_icon" src="./icons/fishcake-01.png" onclick="displayTopping(1)"> 
+				<div class="desc" id="fishcake_desc">
+					<p class="desc_title">Fishcake</p>
+				</div> 
+				<img class="item" id="chashu_icon" src="./icons/chashu-01.png" onclick="displayTopping(2)">  
+				<div class="desc" id="chashu_desc">
+					<p class="desc_title">Pork Belly</p>
+				</div>
+				<img id="egg_icon" class="item" src="./icons/egg-01.png" onclick="displayTopping(3)">
+				<div class="desc" id="egg_desc">
+					<p class="desc_title">Egg</p>
+				</div>	
+				<br>
+				<img class="item" id="bamboo_icon" src="./icons/bamboo-01.png" onclick="displayTopping(4)">  
+				<div class="desc" id="bamboo_desc">
+					<p class="desc_title">Bamboo Shoots</p>
+				</div>
+				<img class="item" id="onion_icon" src="./icons/onion-01.png" onclick="displayTopping(5)"> 
+				<div class="desc" id="onion_desc">
+					<p class="desc_title">Green Onion</p>
+				</div> 
+				<img class="item" id="seaweed_icon" src="./icons/seaweed-01.png" onclick="displayTopping(6)">
+				<div class="desc" id="seaweed_desc">
+					<p class="desc_title">Seaweed</p>
+				</div>
+				<br>
+			</div>
+
+			<div class = "nav">
+				<button onclick="showPage1()"><</button> <button onclick="showEnd()">Finished!</button>
+			</div>
+		</div>
+
+		<div id="end">
+
+			<h2>Enjoy your ramen!</h2>
+
+		</div>
+
+		<div id="utensils">
+			<img id="chopsticks" src="./ramen/chopsticks.png">
+			<img id="spoon" src="./ramen/spoon.png">
+		</div>
+
+	</body>
+
+</html>
